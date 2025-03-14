@@ -17,7 +17,7 @@ interface ReturnProps {
 }
 
 export const useProductOptions = (items: ProductItem[]): ReturnProps => {
-  const [size, setSize] = useState<ProductSize>(30);
+  const [size, setSize] = useState<ProductSize>(300);
   const [type, setType] = useState<ProductType>(1);
   const [selectedIngredients, { toggle: addIngredients }] = useSet(
     new Set<number>([])

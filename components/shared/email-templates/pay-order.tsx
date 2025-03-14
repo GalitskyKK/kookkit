@@ -1,7 +1,7 @@
 import * as React from "react";
 
 interface EmailTemplateProps {
-  orderId: string;
+  orderId: number;
   totalAmount: number;
   paymentUrl: string;
 }
