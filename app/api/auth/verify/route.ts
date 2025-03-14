@@ -1,6 +1,8 @@
 import { prisma } from "@/prisma/prisma-client";
 import { NextRequest, NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 export async function GET(req: NextRequest) {
   try {
     const code = req.nextUrl.searchParams.get("code");
@@ -39,5 +41,9 @@ export async function GET(req: NextRequest) {
   } catch (error) {
     console.error(error);
     console.log("[VERIFY_GET] Server error", error);
+    return NextResponse.json(
+      { error: "Internal Server Error" },
+      { status: 500 }
+    );
   }
 }
