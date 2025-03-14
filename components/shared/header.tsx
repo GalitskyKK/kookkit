@@ -57,7 +57,7 @@ export const Header: React.FC<Props> = ({
           {/* {Left side} */}
           <Link href="/">
             <div className="flex items-center gap-4">
-              <Image src="/logoNMKK.svg" alt="Logo" width={90} height={45} />
+              <Image src="/LogoNMKK.png" alt="Logo" width={90} height={45} />
               <div>
                 <h1 className="text-2xl uppercase font-black">KookKit</h1>
                 <p className="text-sm text-gray-400 leading-3">mmm Tasty af</p>
