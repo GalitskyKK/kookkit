@@ -12,7 +12,7 @@ export const Verification: React.FC<EmailTemplateProps> = ({ code }) => (
     </p>
 
     <p>
-      <a href={`http://localhost:3000/api/auth/verify?code=${code}`}>
+      <a href={`https://kookkit.vercel.app/api/auth/verify?code=${code}`}>
         Confirm registration
       </a>
     </p>
