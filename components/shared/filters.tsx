@@ -55,9 +55,9 @@ export const Filters: React.FC<Props> = ({ className }) => {
         onClickCheckbox={filters.setSize}
         selected={filters.sizes}
         items={[
-          { text: "Small", value: "20" },
-          { text: "Medium", value: "30" },
-          { text: "Large", value: "40" },
+          { text: "Small", value: "200" },
+          { text: "Medium", value: "300" },
+          { text: "Large", value: "400" },
         ]}
       />
       <div className="mt-5 border-y border-y-neutral-100 py-6 pb-7">
