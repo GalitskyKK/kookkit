@@ -17,6 +17,18 @@ Welcome to our Smoothie Bowl Shop, a vibrant online store dedicated to offering 
 - lucide-react
 - Resend
 
+## Payment method
+
+ - Mock card details for payment 
+ 1. New Card
+ 2. Card Number - 5555 5555 5555 4444
+ 3. Card validity period - random (08/36 for example)
+ 4. CVC - random (123 for example)
+
+## Login methods
+- GitHub or Google
+- test@kk.com - 123456
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
