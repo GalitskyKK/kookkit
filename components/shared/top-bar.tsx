@@ -19,7 +19,7 @@ export const TopBar: React.FC<Props> = ({ categories, hasCart = true, className 
         "sticky top-0 bg-white py-5 shadow-lg shadow-black/5 z-10",
         className
       )}>
-      <Container className="flex items-center justify-between">
+      <Container className="flex items-center justify-between gap-2 md:gap-0">
         <Categories items={categories} />
         {/* <SortPopup /> */}
         {hasCart && <CartButton />}

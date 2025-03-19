@@ -40,7 +40,7 @@ export default function CheckoutPage() {
   useEffect(() => {
     async function fetchUserInfo() {
       const data = await Api.auth.getMe();
-      const [firstName, lastName] = data.fullName.split(" ");
+      const [firstName, lastName] = data?.fullName?.split(" ");
 
       form.setValue("firstName", firstName);
       form.setValue("lastName", lastName);
@@ -74,12 +74,12 @@ export default function CheckoutPage() {
   };
 
   return (
-    <Container className="mt-10">
+    <Container className="mt-10 w-full p-0">
       <Title text="Checkout" size="xl" className="font-extrabold mb-8" />
       <FormProvider {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <div className="flex gap-10">
-            <div className="flex flex-col gap-10 flex-1 mb-20">
+          <div className="flex gap-1 md:gap-10 flex-col md:flex-row">
+            <div className="flex flex-col gap-10 flex-1 md:mb-20 mb-5">
               <CheckoutCart
                 loading={loading}
                 items={items}
@@ -90,7 +90,7 @@ export default function CheckoutPage() {
               <CheckoutDelivery loading={loading} />
             </div>
 
-            <div className="w-[450px]">
+            <div className="md:w-[450px]">
               <CheckoutSidebar
                 totalAmount={totalAmount}
                 loading={loading || submitting}

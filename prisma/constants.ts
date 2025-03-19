@@ -186,7 +186,7 @@ export const products = [
   {
     name: "Raspberry Smoothie",
     imageUrl:
-      "https://s.iimg.su/s/07/3uHzRGa1xhUncUZC9Kvo9ysUmk0CTi8QEicOC3V6.png",
+      "https://s.iimg.su/s/07/vVEMthuQDK4NFKQEb538PCG4pwAP0Yl50a81ZAiG.png",
     categoryId: 2,
   },
   {

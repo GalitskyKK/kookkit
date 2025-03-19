@@ -26,9 +26,9 @@ export default async function Home({
         )}
       />
       <Container className=" mt-10 pb-14">
-        <div className="flex gap-14">
+        <div className="flex flex-col md:flex-row gap-14">
           {/* Filter */}
-          <div className="w-[250px]">
+          <div className="w-full md:w-[250px] hidden md:block">
             <Suspense>
               <Filters />
             </Suspense>

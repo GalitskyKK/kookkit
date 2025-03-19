@@ -53,7 +53,7 @@ export const Header: React.FC<Props> = ({
   return (
     <header className={cn("border-b", className)}>
       <div>
-        <Container className="flex items-center justify-between py-8">
+        <Container className="flex items-center justify-center md:justify-between py-8">
           {/* {Left side} */}
           <Link href="/">
             <div className="flex items-center gap-4">
@@ -65,16 +65,18 @@ export const Header: React.FC<Props> = ({
             </div>
           </Link>
           {hasSearch && (
-            <div className="mx-10 w-96">
+            <div className="mx-10 w-96 hidden md:block">
               <SearchInput />
             </div>
           )}
           {/* {Right side} */}
-          <div className="flex items-center gap-3">
-            <AuthModal open={openAuth} onClose={() => setOpenAuth(false)} />
-            <ProfileButton onClickSignIn={() => setOpenAuth(true)} />
-            {/* {hasCart && <CartButton />} */}
-          </div>
+            {hasSearch && (
+              <div className="flex items-center gap-3">
+                <AuthModal open={openAuth} onClose={() => setOpenAuth(false)} />
+                <ProfileButton onClickSignIn={() => setOpenAuth(true)} className="ml-5 md:ml-0"/>
+                {/* {hasCart && <CartButton />} */}
+              </div>
+            )}
         </Container>
       </div>
     </header>

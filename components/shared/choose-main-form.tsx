@@ -57,9 +57,9 @@ export const ChooseMainForm: React.FC<Props> = ({
   );
 
   return (
-    <div className={cn(className, "flex flex-1")}>
+    <div className={cn(className, "flex flex-col md:flex-row")}>
       <ProductImage imageUrl={imageUrl} size={size} />
-      <div className="w-[490px] bg-[#fcfcfc] p-7 rounded-md">
+      <div className="w-full md:w-[490px] bg-[#fcfcfc] md:p-7 rounded-md">
         <Title text={name} size="md" className="font-extrabold mb-1" />
         <p className="text-gray-400">{textDetails}</p>
         <div className="flex flex-col gap-4 mt-5">
@@ -74,8 +74,8 @@ export const ChooseMainForm: React.FC<Props> = ({
             onClick={(value) => setType(Number(value) as ProductType)}
           />
         </div>
-        <div className="bg-gray-50 p-5 rounded-md h-[420px] overflow-auto scrollbar mt-5">
-          <div className="grid grid-cols-3 gap-3">
+        <div className="bg-gray-50 p-1 md:p-5 rounded-md md:h-[420px] overflow-auto scrollbar mt-5">
+          <div className="grid grid-cols-3 gap-1 md:gap-3">
             {ingredients.map((ingredient) => (
               <IngredientItem
                 key={ingredient.id}

@@ -69,7 +69,7 @@ export const CartDrawer: React.FC<React.PropsWithChildren<Props>> = ({
           ))}
         </div>
         <SheetFooter className="-mx-6 bg-white p-8 rounded-lg">
-          <div className="flex mb-4">
+          <div className="flex items-center justify-center">
             <span className="flex flex-1 text-lg text-neutral-500">
               Total
               <div className="flex-1 border-b border-dashed border-b-neutral-200 relative -top-1 mx-2" />

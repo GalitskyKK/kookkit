@@ -34,7 +34,7 @@ export const ChooseProductModal: React.FC<Props> = ({ product, ingredientsAll, c
       <DialogContent
         aria-describedby="content"
         className={cn(
-          "p-0 w-[1060px] max-w-[1060px] min-h-[600px] bg-white overflow-hidden",
+          "p-3 md:p-0 w-full h-full md:h-auto md:w-[1060px] md:max-w-[1060px] md:min-h-[600px] bg-white overflow-scroll md:overflow-hidden",
           className
         )}>
         <DialogTitle className="sr-only">{product.name}</DialogTitle>
