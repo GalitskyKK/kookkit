@@ -60,7 +60,7 @@ async function up() {
     data: {
       name: "Tropical Paradise",
       imageUrl:
-        "http://postimg.su/image/FaSRFfuj/chad_99784e3b949a4566ac9448bebc6f12e9_1 (1).png",
+        "https://s.iimg.su/s/24/2KK1TN9UzReaP6IWkAzSJSFXLB3vxU0YeuOGPZrJ.png",
       categoryId: 1,
       ingredients: {
         connect: [
@@ -78,7 +78,7 @@ async function up() {
     data: {
       name: "Forest Freshness",
       imageUrl:
-        "http://postimg.su/image/xUNzSMBU/chad_9afdeaa6430d4e5fb8e10648dca299f1_4.png",
+        "https://s.iimg.su/s/24/X1F6xzQ705JXF32F0I4uItZIYufOPVS5mvTP6rKh.png",
       categoryId: 1,
       ingredients: {
         connect: [
@@ -96,7 +96,7 @@ async function up() {
     data: {
       name: "Green Detox",
       imageUrl:
-        "http://postimg.su/image/XxnoWkvL/chad_3f1a8fb714564d86a52852cf3cd51871_2.png",
+        "https://s.iimg.su/s/24/lkEkHQjcTtCwimsKsBTmGIE3dFw1twKQir2XFS5T.png",
       categoryId: 1,
       ingredients: {
         connect: [
@@ -114,7 +114,7 @@ async function up() {
     data: {
       name: "Ocean Wave",
       imageUrl:
-        "http://postimg.su/image/dWcT5WIP/chad_3ad5d6f672c84399a15641ae9433310a_1.png",
+        "https://s.iimg.su/s/24/T5uRGEJib6PddfcUymZugHXSqlYzHWssIVoHJFKq.png",
       categoryId: 1,
       ingredients: {
         connect: [
@@ -132,7 +132,7 @@ async function up() {
     data: {
       name: "Energy Boost",
       imageUrl:
-        "http://postimg.su/image/KWyNvnN4/chad_0f1d46f555fa4434a84e7d170e1abd1f_1.png",
+        "https://s.iimg.su/s/24/kysEQHZ8p8L3jztHtJuRWFOo3eJFmIWOE1bgc3SG.png",
       categoryId: 1,
       ingredients: {
         connect: [
@@ -150,7 +150,7 @@ async function up() {
     data: {
       name: "East Harmony",
       imageUrl:
-        "http://postimg.su/image/1nMTGUlu/chad_e1569796880f49cebaf773eb822d9b72_1.png",
+        "https://s.iimg.su/s/24/My7PxMTCIMKJq9TD9nhY8tFZ2dXT32vVm23caPvM.png",
       categoryId: 1,
       ingredients: {
         connect: [
@@ -168,7 +168,7 @@ async function up() {
     data: {
       name: "Berry Boom",
       imageUrl:
-        "http://postimg.su/image/enEXuneh/chad_193b8780db4345409603cc848048c559_3.png",
+        "https://s.iimg.su/s/24/hLvxdcvEi9BZfiTL0rxMSaDnrZopToMJGWkbkF9H.png",
       categoryId: 1,
       ingredients: {
         connect: [
@@ -186,7 +186,7 @@ async function up() {
     data: {
       name: "Golden Mango",
       imageUrl:
-        "http://postimg.su/image/TjHTCrbR/chad_f0366a76fd954e2ab790a42deecc1016_1.png",
+        "https://s.iimg.su/s/24/bG0C0mSn36CxGvP1VPIk8PWNVe97H2LyZJF0zYNM.png",
       categoryId: 1,
       ingredients: {
         connect: [
