@@ -4,6 +4,7 @@ import { Title } from "./title";
 import { Button } from "../ui";
 import { Plus } from "lucide-react";
 import { Ingredient } from "@prisma/client";
+import { FavoriteButton } from "./favorite-button";
 
 interface Props {
   id: number;
@@ -22,7 +23,8 @@ export const ProductCard: React.FC<Props> = ({
   ingredients,
 }) => {
   return (
-    <div>
+    <div className="relative">
+      <FavoriteButton productId={id} className="absolute top-3 right-3 z-20" />
       <Link href={`/product/${id}`} scroll={false}>
         <div className="flex justify-center p-6 bg-secondary rounded-lg h-[260px]">
           <img width={215} height={215} src={imageUrl} alt={name} className="rounded-lg"/>

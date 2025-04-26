@@ -12,6 +12,8 @@ import toast from "react-hot-toast";
 import { useSession, signIn } from "next-auth/react";
 import { ProfileButton } from "./profile-button";
 import { AuthModal } from "./modals/auth-modal";
+import { FavoritesLink } from "./favorites-link";
+import { useFavoritesStore } from "@/shared/store/favorites";
 
 interface Props {
   hasSearch?: boolean;
@@ -28,6 +30,14 @@ export const Header: React.FC<Props> = ({
   const searchParams = useSearchParams();
   const router = useRouter();
   const { data: session } = useSession();
+  const { fetchFavorites } = useFavoritesStore();
+
+  useEffect(() => {
+    if (session?.user) {
+      fetchFavorites();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session?.user]);
 
   useEffect(() => {
     let toastMessage = "";
@@ -72,6 +82,7 @@ export const Header: React.FC<Props> = ({
           {/* {Right side} */}
             {hasSearch && (
               <div className="flex items-center gap-3">
+                <FavoritesLink />
                 <AuthModal open={openAuth} onClose={() => setOpenAuth(false)} />
                 <ProfileButton onClickSignIn={() => setOpenAuth(true)} className="ml-5 md:ml-0"/>
                 {/* {hasCart && <CartButton />} */}
